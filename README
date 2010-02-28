@@ -1,0 +1,10 @@
+gem install maccman-juggernaut -s http://gems.github.com
+
+rails juggernaut_test
+cd juggernaut_test
+
+juggernaut -g config/juggernaut.yml
+
+script/plugin install git://github.com/maccman/juggernaut_plugin.git
+
+script/generate controller chat
